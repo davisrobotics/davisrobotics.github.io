@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!-- Renders the YAML front matter into the title of the page -->
+			<title>{{ page.title }}</title>
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/css/main.css">
+		</head>
+		<body>
+			<!-- Navigation -->
+			<nav>
+	    		<ul>
+						<li>davis robotics.</li>
+	        	<li><a href="/" class="navlink">home.</a></li>
+		        <li><a href="/about" class="navlink">about.</a></li>
+	        	<li><a href="/blog" class="navlink">blog.</a></li>
+	    		</ul>
+			</nav>
+			<!-- Content -->
+			<div class="container">
+
+			<!-- Angular via Jekyll for content in _posts/ to be rendered by _layouts/post.html -->{{ content }}
+
+			</div>
+			<!-- Footer -->
+			<footer>
+	    		<ul>
+              <li><a href="http://github.com/davisrobotics" class="navlink">github.</a></li>
+              <li><a href="http://pages.github.com" class="navlink">Proudly Hosted By GitHub Pages.</a></li>
+              <li><a href="http://github.com/rishiosaur">Made by rishiosaur.</a></li>
+				</ul>
+			</footer>
+		</body>
+	</html>
